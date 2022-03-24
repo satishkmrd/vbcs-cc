@@ -1,0 +1,20 @@
+/* This file is where css selectors for the component go.
+   There will be hard coded properties and properties controlled by variables, for example
+
+   cc-monaco-editor .cc-monaco-editor-value-text {
+   color: var(--cc-monaco-editor-value-text-color);
+   display: inline-block;
+	 }
+*/
+
+cc-monaco-editor:not(.oj-complete){
+  visibility: hidden;
+}
+
+cc-monaco-editor{
+	display : block;
+}
+
+.editor-container{
+	 height: 100%;
+}

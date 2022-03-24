@@ -1,0 +1,59 @@
+{
+  "name": "cc-monaco-editor",
+  "version": "1.0.0",
+  "jetVersion": "^11.1.0",
+  "displayName": "Monaco Editor",
+  "description": "A wrapper for OpenSource Monaco Editor",
+  "properties": {
+	 "editorLanguage" : {
+	  "propertyGroup":"common",
+	  "description": "The Language of the editor",
+      "displayName": "Language",
+      "type": "string",
+	  "required": true,
+      "enumValues": ["abap","aes","apex","azcli","bat","bicep","c","cameligo","clojure","coffeescript","cpp","csharp","csp","css","dart","dockerfile","ecl","elixir","flow9","freemarker2","freemarker2.tag-angle.interpolation-bracket","freemarker2.tag-angle.interpolation-dollar","freemarker2.tag-auto.interpolation-bracket","freemarker2.tag-auto.interpolation-dollar","freemarker2.tag-bracket.interpolation-bracket","freemarker2.tag-bracket.interpolation-dollar","fsharp","go","graphql","handlebars","hcl","html","ini","java","javascript","json","julia","kotlin","less","lexon","liquid","lua","m3","markdown","mips","msdax","mysql","objective-c","pascal","pascaligo","perl","pgsql","php","pla","plaintext","postiats","powerquery","powershell","proto","pug","python","qsharp","r","razor","redis","redshift","restructuredtext","ruby","rust","sb","scala","scheme","scss","shell","sol","sparql","sql","st","swift","systemverilog","tcl","twig","typescript","vb","verilog","xml","yaml"]
+    },
+    "editorTheme" : {
+      "description": "The Theme of the editor",
+      "displayName": "Theme",
+      "type": "string",
+	  "value": "vs-dark",
+      "enumValues": ["vs", "vs-dark", "hc-black"],
+	  "propertyEditorValues":{
+         "vs":{
+            "displayName":"Visual Studio"
+         },
+		 "vs-dark":{
+            "displayName":"Visual Studio Dark"
+         },
+		 "hc-black":{
+            "displayName":"High Contrast Dark"
+         }
+	   },
+	   "propertyGroup":"common"
+    },
+	"editorValue" : {
+	  "propertyGroup":"common",
+      "type" : "string",
+	  "description": "The Current Value of the editor",
+      "displayName": "Current Value",
+	  "readOnly" : true,
+	  "writeback" : true
+    },
+	"editorInitialValue" : {
+	  "propertyGroup":"common",
+      "type" : "string",
+	  "description": "The initial value of the editor",
+      "displayName": "Initial Value"
+    }
+  },
+  "methods": {
+
+  }, 
+  "events": {
+
+  }, 
+  "slots": {
+
+  }
+}
